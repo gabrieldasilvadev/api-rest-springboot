@@ -1,8 +1,11 @@
 spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
   datasource:
-    url: jdbc:postgresql://localhost:5432/produtos-apirest
+    url: jdbc:postgresql://localhost:5432/produtosapirest
     username: gabriel
-    password: gbr123!
+    password: gbr123
   jpa:
     hibernate:
       ddl-auto: update
